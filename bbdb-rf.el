@@ -879,10 +879,9 @@ See `bbdb-csv-export-fields` for predefined export-types."
     phone))
 
 (defcustom bbdb-print-latex-list-table
-  '(("[rp]" . "Robert Widhopf")
-   ("[bp]" . "Birgit Widhopf")
-   ("[rbp]" ."Birgit \\& Robert Widhopf")
-   ("." . "\\Birgit \\& Robert Widhopf \\(Alle Adressen)"))
+  '(("[p]" . "private")
+   ("[c]" . "company")
+   ("." . "All Addresses)"))
   "*A alist mapping predicates to labels."
   :group 'bbdb-rf
   :type '(repeat (cons (regexp :tag "Regexp") (string :tag "Label"))))
